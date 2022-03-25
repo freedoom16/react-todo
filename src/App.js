@@ -26,11 +26,7 @@ function App() {
       </div>
       </div>
 
-      // <BrowserRouter>
-      // <Routes>
-      //   <Route path='/' element={<Create />} />
-      // </Routes>
-      // </BrowserRouter>
+     
     
   );
 }
