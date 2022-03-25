@@ -10,25 +10,16 @@ function App() {
       <div className="main">
       <h2 className="main-header">CRUD opertaions</h2>
       <div>
-        {/* <BrowserRouter>
-          <Create />
-        </BrowserRouter> */}
         <Routes>
           <Route path='/' element={<Create />}/>
         </Routes>
       </div>
       <div>
-        {/* <BrowserRouter>
-          <Read />
-        </BrowserRouter> */}
         <Routes>
           <Route path='Read' element={<Read />}/>
         </Routes>
       </div>
       <div>
-        {/* <BrowserRouter>
-          <Update />
-        </BrowserRouter> */}
         <Routes>
           <Route path='Update' element={<Update />}/>
         </Routes>
