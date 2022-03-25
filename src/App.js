@@ -2,7 +2,7 @@ import './App.css';
 import Create from './components/Create';
 import Read from './components/Read';
 import Update from './components/Update';
-import { BrowserRouter } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
 
@@ -10,19 +10,28 @@ function App() {
       <div className="main">
       <h2 className="main-header">CRUD opertaions</h2>
       <div>
-        <BrowserRouter>
+        {/* <BrowserRouter>
           <Create />
-        </BrowserRouter>
+        </BrowserRouter> */}
+        <Routes>
+          <Route path='/' element={<Create />}/>
+        </Routes>
       </div>
       <div>
-        <BrowserRouter>
+        {/* <BrowserRouter>
           <Read />
-        </BrowserRouter>
+        </BrowserRouter> */}
+        <Routes>
+          <Route path='Read' element={<Read />}/>
+        </Routes>
       </div>
       <div>
-        <BrowserRouter>
+        {/* <BrowserRouter>
           <Update />
-        </BrowserRouter>
+        </BrowserRouter> */}
+        <Routes>
+          <Route path='Update' element={<Update />}/>
+        </Routes>
       </div>
       </div>
 
